@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="coinserom-site-verification" content="eed0eead0b53" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoinSwitch – Free Crypto Converter | Bitcoin, Ethereum, USDT to USD, EUR</title>
+<meta name="description" content="Convert Bitcoin, Ethereum, USDT and 12+ cryptocurrencies to USD, EUR, GBP and more with live market rates. Free, fast, no sign-up.">
+<link rel="alternate" hreflang="en" href="?lang=en"><link rel="alternate" hreflang="fr" href="?lang=fr"><link rel="alternate" hreflang="ar" href="?lang=ar"><link rel="alternate" hreflang="x-default" href="?lang=en">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10243E;--mute:#5B6B7F;--paper:#F5F7F9;--card:#fff;--line:#DDE4EB;--acc:#0B7A75;--acc2:#E8F4F3;--up:#13875B;--dn:#C0392B;--r:14px}
+@media(prefers-color-scheme:dark){:root{--ink:#E8EEF5;--mute:#93A3B5;--paper:#0C1623;--card:#13233A;--line:#243752;--acc:#3CC6BC;--acc2:#12304A}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Manrope,system-ui,sans-serif}
+[dir=rtl] body,[dir=rtl] input,[dir=rtl] select,[dir=rtl] button{font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif}
+a{color:var(--acc)}:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--card);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{font-weight:800;font-size:1.25rem;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.logo i{width:28px;height:28px;border-radius:8px;background:var(--acc);display:grid;place-items:center;color:#fff;font-style:normal;font-size:15px}
+.lang{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.lang button{border:0;background:none;color:var(--mute);padding:6px 12px;font-weight:600;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--acc);color:#fff}
+.hero{padding:44px 0 24px}
+h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 10px;max-width:16em}
+.sub{color:var(--mute);max-width:36em;margin:0 0 28px}
+.conv{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 12px 40px -20px rgba(16,36,62,.35)}
+.row{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end}
+label{display:block;font-size:.85rem;font-weight:600;color:var(--mute);margin-bottom:6px}
+.fld{display:flex;border:1px solid var(--line);border-radius:12px;background:var(--paper);overflow:hidden}
+.fld:focus-within{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc2)}
+.fld input,.fld select{border:0;background:none;color:var(--ink);font-size:1.1rem;padding:13px 14px;min-width:0;font-family:inherit}
+.fld input{flex:1;font-weight:700;width:100%}.fld select{border-inline-start:1px solid var(--line);font-weight:600;cursor:pointer;max-width:48%}
+.fld input:focus,.fld select:focus{outline:0}
+.swap{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--acc);font-size:1.2rem;cursor:pointer;margin-bottom:2px}
+.swap:hover{background:var(--acc2)}
+.res{margin-top:22px;padding:18px;background:var(--acc2);border-radius:12px}
+.res b{display:block;font-size:clamp(1.5rem,4.5vw,2.2rem);letter-spacing:-.02em;word-break:break-word}
+.res small{color:var(--mute)}
+.st{display:inline-flex;gap:6px;align-items:center;font-size:.8rem;color:var(--mute);margin-top:10px}
+.st:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--up)}.st.off:before{background:#d99a00}
+section{padding:36px 0}h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 16px}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+table{width:100%;border-collapse:collapse;min-width:480px}
+th,td{padding:12px 16px;text-align:start;border-bottom:1px solid var(--line)}th{font-size:.85rem;color:var(--mute)}tr:last-child td{border:0}
+tbody tr{cursor:pointer}tbody tr:hover{background:var(--acc2)}
+.up{color:var(--up)}.dn{color:var(--dn)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}.box h3{margin:0 0 6px;font-size:1.05rem}.box p{margin:0;color:var(--mute);font-size:.95rem}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}summary{font-weight:700;cursor:pointer}details p{margin:10px 0 0;color:var(--mute)}
+footer{background:var(--card);border-top:1px solid var(--line);padding:30px 0;margin-top:20px;font-size:.92rem;color:var(--mute)}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:14px}footer nav button{background:none;border:0;color:var(--acc);cursor:pointer;font:inherit;padding:0}
+footer p{margin:6px 0}.since{font-weight:700;color:var(--ink)}
+dialog{border:1px solid var(--line);border-radius:16px;max-width:560px;width:calc(100% - 32px);background:var(--card);color:var(--ink);padding:26px}
+dialog::backdrop{background:rgba(8,16,28,.6)}dialog h2{margin-top:0}dialog button{margin-top:10px;background:var(--acc);color:#fff;border:0;border-radius:10px;padding:10px 20px;font-weight:700;cursor:pointer;font-family:inherit}
+#ck{position:fixed;inset:auto 16px 16px;max-width:520px;margin-inline:auto;background:var(--ink);color:var(--paper);border-radius:14px;padding:16px;display:none;gap:14px;align-items:center;z-index:9;font-size:.9rem}
+#ck button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:8px 16px;font-weight:700;cursor:pointer;white-space:nowrap}
+@media(max-width:620px){.row{grid-template-columns:1fr}.swap{justify-self:center;transform:rotate(90deg)}.fld select{max-width:52%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="w">
+<div class="logo"><i>⇄</i>CoinSwitch</div>
+<div class="lang" role="group" aria-label="Language"><button data-l="en">EN</button><button data-l="fr">FR</button><button data-l="ar">العربية</button></div>
+</div></header>
+
+<main>
+<div class="hero"><div class="w">
+<h1 data-t="h1"></h1><p class="sub" data-t="sub"></p>
+<div class="conv">
+<div class="row">
+<div><label for="amt" data-t="amount"></label><div class="fld"><input id="amt" type="text" inputmode="decimal" value="1" autocomplete="off"><select id="from" aria-label="From"></select></div></div>
+<button class="swap" id="swap" aria-label="Swap">⇄</button>
+<div><label for="to" data-t="to"></label><div class="fld"><input id="out" readonly aria-label="Result"><select id="to"></select></div></div>
+</div>
+<div class="res"><small id="rate"></small><b id="big"></b></div>
+<div class="st" id="st"></div>
+</div></div></div>
+
+<section><div class="w"><h2 data-t="mk"></h2>
+<div class="tw"><table><thead><tr><th data-t="coin"></th><th data-t="price"></th><th data-t="ch"></th></tr></thead><tbody id="tb"></tbody></table></div></div></section>
+
+<section><div class="w"><h2 data-t="why"></h2>
+<div class="grid">
+<div class="box"><h3 data-t="w1h"></h3><p data-t="w1p"></p></div>
+<div class="box"><h3 data-t="w2h"></h3><p data-t="w2p"></p></div>
+<div class="box"><h3 data-t="w3h"></h3><p data-t="w3p"></p></div>
+</div></div></section>
+
+<section><div class="w"><h2 data-t="faq"></h2>
+<details><summary data-t="q1"></summary><p data-t="a1"></p></details>
+<details><summary data-t="q2"></summary><p data-t="a2"></p></details>
+<details><summary data-t="q3"></summary><p data-t="a3"></p></details>
+</div></section>
+</main>
+
+<footer><div class="w">
+<nav><button data-p="about" data-t="about"></button><button data-p="privacy" data-t="privacy"></button><button data-p="terms" data-t="terms"></button><button data-p="disc" data-t="disc"></button><button data-p="contact" data-t="contact"></button></nav>
+<p data-t="risk"></p>
+<p>© <span id="yr"></span> CoinSwitch. <span data-t="rights"></span></p>
+<p class="since" data-t="since"></p>
+</div></footer>
+
+<dialog id="dlg"><h2 id="dh"></h2><p id="dp"></p><button id="dc" data-t="close"></button></dialog>
+<div id="ck" role="dialog"><span data-t="cookie"></span><button id="ok" data-t="accept"></button></div>
+
+<script>
+const T={
+en:{h1:"Convert crypto to any currency, instantly.",sub:"Live market rates for Bitcoin, Ethereum, USDT and more. Free, private, no sign-up.",amount:"Amount",to:"Convert to",mk:"Market prices (USD)",coin:"Coin",price:"Price",ch:"24h",why:"Why CoinSwitch",w1h:"Live market data",w1p:"Rates refresh automatically from public market feeds, so you always see a current price.",w2h:"Private by design",w2p:"No account and no wallet connection. Your amounts never leave your browser.",w3h:"Three languages",w3p:"Use the converter in English, French or Arabic, with full right-to-left support.",faq:"Frequently asked questions",q1:"How is the conversion calculated?",a1:"We multiply your amount by the latest market price of the selected asset, then divide by the price of the target currency.",q2:"Are the rates exact?",a2:"Rates are indicative market averages. Exchanges and banks may quote slightly different prices and add fees.",q3:"Is CoinSwitch free?",a3:"Yes. The converter is free to use and does not require registration.",about:"About",privacy:"Privacy Policy",terms:"Terms of Use",disc:"Disclaimer",contact:"Contact",risk:"Information only. Not financial advice. Crypto assets are volatile and you can lose money.",rights:"All rights reserved.",since:"Online and serving users for over two years.",close:"Close",cookie:"We use cookies to remember your language and, where enabled, to show relevant ads.",accept:"Accept",rate:(a,b,r)=>`1 ${a} = ${r} ${b}`,live:"Live rates",off:"Showing indicative rates (live feed unavailable)",
+p:{about:"CoinSwitch is an independent crypto conversion tool. Our goal is to make market prices clear and accessible to everyone, in their own language.",privacy:"We do not require accounts and do not collect personal data through the converter. We store your language choice and cookie consent in your browser. Third-party services such as advertising partners may use cookies according to their own policies. You can clear cookies at any time in your browser.",terms:"By using this site you agree to use it lawfully and at your own risk. The service is provided as is, without warranties of any kind. We may update the site and these terms at any time.",disc:"Content is for general information only and is not investment, tax or legal advice. Prices are indicative and may be delayed or inaccurate. Cryptocurrency investments carry a high risk of loss. Do your own research.",contact:"Questions or feedback? Email us at contact@yourdomain.com."}},
+fr:{h1:"Convertissez vos cryptos en n'importe quelle devise, instantanément.",sub:"Taux du marché en direct pour Bitcoin, Ethereum, USDT et plus. Gratuit, privé, sans inscription.",amount:"Montant",to:"Convertir en",mk:"Prix du marché (USD)",coin:"Crypto",price:"Prix",ch:"24h",why:"Pourquoi CoinSwitch",w1h:"Données en direct",w1p:"Les taux se mettent à jour automatiquement à partir de flux de marché publics.",w2h:"Confidentialité",w2p:"Pas de compte ni de connexion de portefeuille. Vos montants restent dans votre navigateur.",w3h:"Trois langues",w3p:"Utilisez le convertisseur en anglais, français ou arabe, avec prise en charge complète de la lecture de droite à gauche.",faq:"Questions fréquentes",q1:"Comment la conversion est-elle calculée ?",a1:"Nous multiplions votre montant par le dernier prix de l'actif choisi, puis divisons par le prix de la devise cible.",q2:"Les taux sont-ils exacts ?",a2:"Les taux sont des moyennes indicatives. Les plateformes et banques peuvent afficher des prix légèrement différents et appliquer des frais.",q3:"CoinSwitch est-il gratuit ?",a3:"Oui. Le convertisseur est gratuit et ne nécessite aucune inscription.",about:"À propos",privacy:"Confidentialité",terms:"Conditions d'utilisation",disc:"Avertissement",contact:"Contact",risk:"À titre informatif uniquement. Ceci n'est pas un conseil financier. Les cryptoactifs sont volatils et vous pouvez perdre de l'argent.",rights:"Tous droits réservés.",since:"En ligne et au service des utilisateurs depuis plus de deux ans.",close:"Fermer",cookie:"Nous utilisons des cookies pour mémoriser votre langue et, le cas échéant, afficher des publicités pertinentes.",accept:"Accepter",rate:(a,b,r)=>`1 ${a} = ${r} ${b}`,live:"Taux en direct",off:"Taux indicatifs affichés (flux en direct indisponible)",
+p:{about:"CoinSwitch est un outil indépendant de conversion de cryptomonnaies. Notre objectif est de rendre les prix du marché clairs et accessibles à tous, dans leur langue.",privacy:"Aucun compte n'est requis et nous ne collectons aucune donnée personnelle via le convertisseur. Votre langue et votre consentement aux cookies sont enregistrés dans votre navigateur. Des services tiers, comme des partenaires publicitaires, peuvent utiliser des cookies selon leurs propres politiques. Vous pouvez supprimer les cookies à tout moment.",terms:"En utilisant ce site, vous acceptez de l'utiliser légalement et à vos propres risques. Le service est fourni tel quel, sans garantie. Nous pouvons modifier le site et ces conditions à tout moment.",disc:"Le contenu est fourni à titre d'information générale et ne constitue pas un conseil en investissement, fiscal ou juridique. Les prix sont indicatifs et peuvent être retardés ou inexacts. Les cryptomonnaies comportent un risque élevé de perte. Faites vos propres recherches.",contact:"Une question ou un avis ? Écrivez-nous à contact@yourdomain.com."}},
+ar:{h1:"حوّل العملات الرقمية إلى أي عملة فورًا.",sub:"أسعار السوق المباشرة للبيتكوين والإيثيريوم وUSDT وغيرها. مجاني وخاص وبدون تسجيل.",amount:"المبلغ",to:"التحويل إلى",mk:"أسعار السوق (دولار)",coin:"العملة",price:"السعر",ch:"24 ساعة",why:"لماذا CoinSwitch",w1h:"بيانات سوق مباشرة",w1p:"تتحدّث الأسعار تلقائيًا من مصادر سوق عامة لتعرض لك سعرًا حديثًا دائمًا.",w2h:"خصوصية أولًا",w2p:"لا حساب ولا ربط محفظة. المبالغ التي تدخلها تبقى في متصفحك.",w3h:"ثلاث لغات",w3p:"استخدم المحوّل بالإنجليزية أو الفرنسية أو العربية مع دعم كامل للكتابة من اليمين إلى اليسار.",faq:"الأسئلة الشائعة",q1:"كيف يتم حساب التحويل؟",a1:"نضرب المبلغ في أحدث سعر للأصل المختار ثم نقسمه على سعر العملة المستهدفة.",q2:"هل الأسعار دقيقة تمامًا؟",a2:"الأسعار متوسطات استرشادية للسوق، وقد تعرض المنصات والبنوك أسعارًا مختلفة قليلًا وتضيف رسومًا.",q3:"هل CoinSwitch مجاني؟",a3:"نعم، المحوّل مجاني ولا يتطلب أي تسجيل.",about:"من نحن",privacy:"سياسة الخصوصية",terms:"شروط الاستخدام",disc:"إخلاء المسؤولية",contact:"اتصل بنا",risk:"للمعلومات فقط وليس نصيحة مالية. الأصول الرقمية شديدة التقلب وقد تخسر أموالك.",rights:"جميع الحقوق محفوظة.",since:"يعمل ويخدم المستخدمين منذ أكثر من عامين.",close:"إغلاق",cookie:"نستخدم ملفات تعريف الارتباط لتذكّر لغتك ولعرض إعلانات مناسبة عند تفعيلها.",accept:"موافق",rate:(a,b,r)=>`1 ${a} = ${r} ${b}`,live:"أسعار مباشرة",off:"يتم عرض أسعار استرشادية (التحديث المباشر غير متاح)",
+p:{about:"CoinSwitch أداة مستقلة لتحويل العملات الرقمية. هدفنا جعل أسعار السوق واضحة ومتاحة للجميع بلغتهم.",privacy:"لا نطلب إنشاء حساب ولا نجمع بيانات شخصية عبر المحوّل. نحفظ اختيار اللغة وموافقة ملفات تعريف الارتباط في متصفحك. قد تستخدم أطراف ثالثة مثل شركاء الإعلانات ملفات تعريف الارتباط وفق سياساتها الخاصة. يمكنك حذفها في أي وقت من المتصفح.",terms:"باستخدامك هذا الموقع فإنك توافق على استخدامه بشكل قانوني وعلى مسؤوليتك. تُقدَّم الخدمة كما هي دون أي ضمانات. قد نحدّث الموقع وهذه الشروط في أي وقت.",disc:"المحتوى للمعلومات العامة فقط وليس نصيحة استثمارية أو ضريبية أو قانونية. الأسعار استرشادية وقد تتأخر أو تكون غير دقيقة. الاستثمار في العملات الرقمية ينطوي على مخاطر خسارة عالية، فقم ببحثك الخاص.",contact:"لديك سؤال أو ملاحظة؟ راسلنا على contact@yourdomain.com."}}
+};
+// Asset list: id for CoinGecko, snapshot USD value (indicative fallback)
+const C={BTC:["bitcoin",65000],ETH:["ethereum",2600],USDT:["tether",1],BNB:["binancecoin",580],SOL:["solana",150],XRP:["ripple",0.55],USDC:["usd-coin",1],ADA:["cardano",0.4],DOGE:["dogecoin",0.12],TRX:["tron",0.16],TON:["the-open-network",5.5],LTC:["litecoin",70]};
+const F={USD:1,EUR:.92,GBP:.78,AED:3.67,SAR:3.75,MAD:9.8,EGP:48,CAD:1.37,JPY:150,TRY:34};
+let usd={},chg={},live=false,L="en";
+Object.entries(C).forEach(([k,v])=>usd[k]=v[1]);Object.entries(F).forEach(([k,v])=>usd[k]=1/v);
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const fmt=(n,max)=>{const d=n>=1?2:n>=.01?4:8;return new Intl.NumberFormat(L==="ar"?"ar-u-nu-latn":L,{maximumFractionDigits:max??d}).format(n)};
+function opts(){const f=$("#from"),t=$("#to"),a=f.value||"BTC",b=t.value||"USD";
+const h=`<optgroup label="Crypto">${Object.keys(C).map(k=>`<option>${k}</option>`).join("")}</optgroup><optgroup label="Fiat">${Object.keys(F).map(k=>`<option>${k}</option>`).join("")}</optgroup>`;
+f.innerHTML=t.innerHTML=h;f.value=a;t.value=b}
+function calc(){const x=parseFloat(($("#amt").value||"0").replace(",","."))||0,a=$("#from").value,b=$("#to").value,r=usd[a]/usd[b];
+$("#out").value=fmt(x*r,8);$("#big").textContent=`${fmt(x)} ${a} = ${fmt(x*r,8)} ${b}`;$("#rate").textContent=T[L].rate(a,b,fmt(r,8));
+$("#st").textContent=live?T[L].live:T[L].off;$("#st").className="st"+(live?"":" off")}
+function table(){$("#tb").innerHTML=Object.keys(C).map(k=>{const c=chg[k];return`<tr data-k="${k}"><td><b>${k}</b></td><td>$${fmt(usd[k])}</td><td class="${c>=0?"up":"dn"}">${c==null?"—":(c>=0?"+":"")+c.toFixed(2)+"%"}</td></tr>`}).join("")}
+function lang(l){L=l;const d=T[l];document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";
+$$("[data-t]").forEach(e=>{const v=d[e.dataset.t];if(typeof v==="string")e.textContent=v});
+$$(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));
+try{localStorage.setItem("cs_lang",l)}catch(e){}calc();table()}
+async function load(){try{
+const ids=Object.values(C).map(v=>v[0]).join(","),fi=Object.keys(F).map(x=>x.toLowerCase()).join(",");
+const r=await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=${fi}&include_24hr_change=true`);if(!r.ok)throw 0;
+const j=await r.json(),btc=j.bitcoin;
+Object.entries(C).forEach(([k,v])=>{const o=j[v[0]];if(o){usd[k]=o.usd;chg[k]=o.usd_24h_change}});
+Object.keys(F).forEach(k=>{if(k!=="USD")usd[k]=btc.usd/btc[k.toLowerCase()]});live=true}catch(e){live=false}
+calc();table()}
+$("#yr").textContent=new Date().getFullYear();
+opts();$("#from").value="BTC";$("#to").value="USD";
+["amt","from","to"].forEach(i=>$("#"+i).addEventListener("input",calc));
+$("#swap").onclick=()=>{const a=$("#from").value;$("#from").value=$("#to").value;$("#to").value=a;calc()};
+$("#tb").onclick=e=>{const r=e.target.closest("tr");if(r){$("#from").value=r.dataset.k;$("#to").value="USD";calc();scrollTo({top:0})}};
+$$(".lang button").forEach(b=>b.onclick=()=>lang(b.dataset.l));
+$$("[data-p]").forEach(b=>b.onclick=()=>{$("#dh").textContent=T[L][b.dataset.p];$("#dp").textContent=T[L].p[b.dataset.p];$("#dlg").showModal()});
+$("#dc").onclick=()=>$("#dlg").close();
+$("#ok").onclick=()=>{$("#ck").style.display="none";try{localStorage.setItem("cs_ck","1")}catch(e){}};
+let sl="en",ck=0;try{sl=new URLSearchParams(location.search).get("lang")||localStorage.getItem("cs_lang")||"en";ck=localStorage.getItem("cs_ck")}catch(e){}
+if(!ck)$("#ck").style.display="flex";
+lang(T[sl]?sl:"en");load();setInterval(load,60000);
+</script>
+</body>
+</html>
